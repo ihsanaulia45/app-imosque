@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kebijakan Privasi iMosque - Aplikasi Muslim Terlengkap untuk Ibadah Anda">
+    <meta name="keywords" content="iMosque, Privacy Policy, Kebijakan Privasi, Aplikasi Muslim, Islamic App">
+    <title>Kebijakan Privasi - iMosque | Privacy Policy</title>
+
+    <style>
+        /* ===== CSS Variables ===== */
+        :root {
+            --primary-color: #2E7D32;
+            --primary-light: #4CAF50;
+            --primary-dark: #1B5E20;
+            --secondary-color: #66BB6A;
+            --accent-color: #81C784;
+            --bg-color: #F5F5F5;
+            --card-bg: #FFFFFF;
+            --text-primary: #212121;
+            --text-secondary: #757575;
+            --border-color: #E0E0E0;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        /* ===== Global Styles ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: var(--text-primary);
+            background: linear-gradient(135deg, #E8F5E9 0%, #F1F8E9 100%);
+            min-height: 100vh;
+        }
+
+        /* ===== Header ===== */
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        /* ===== Language Toggle ===== */
+        .lang-toggle {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .lang-btn {
+            padding: 0.75rem 2rem;
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover {
+            background: white;
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .lang-btn.active {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        /* ===== Container ===== */
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        /* ===== Content Card ===== */
+        .content {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .content.hidden {
+            display: none;
+        }
+
+        /* ===== Typography ===== */
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid var(--primary-light);
+            padding-bottom: 1rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        h2::before {
+            content: "📋";
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            color: var(--primary-dark);
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        strong {
+            color: var(--primary-dark);
+            font-weight: 600;
+        }
+
+        /* ===== Lists ===== */
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            padding-left: 0.5rem;
+        }
+
+        ul li::marker {
+            color: var(--primary-color);
+            font-size: 1.2em;
+        }
+
+        /* ===== Info Box ===== */
+        .info-box {
+            background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .info-box strong {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* ===== Warning Box ===== */
+        .warning-box {
+            background: linear-gradient(135deg, #FFF9C4 0%, #FFF59D 100%);
+            border-left: 4px solid #FBC02D;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .warning-box::before {
+            content: "⚠️ ";
+            font-size: 1.2rem;
+        }
+
+        /* ===== Table ===== */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            box-shadow: var(--shadow);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        thead {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        tbody tr:nth-child(even) {
+            background: #F5F5F5;
+        }
+
+        tbody tr:hover {
+            background: #E8F5E9;
+            transition: background 0.3s ease;
+        }
+
+        /* ===== Contact Card ===== */
+        .contact-card {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: var(--shadow-hover);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem 0;
+            font-size: 1.1rem;
+        }
+
+        .contact-item::before {
+            font-size: 1.5rem;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background: var(--primary-dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* ===== Badge ===== */
+        .badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--primary-light);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin: 0.25rem;
+        }
+
+        /* ===== Back to Top Button ===== */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: var(--shadow-hover);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-to-top:hover {
+            background: var(--primary-dark);
+            transform: translateY(-5px);
+        }
+
+        .back-to-top.show {
+            display: flex;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            header {
+                padding: 2rem 1rem;
+            }
+
+            .logo {
+                font-size: 2rem;
+            }
+
+            .tagline {
+                font-size: 1rem;
+            }
+
+            .lang-toggle {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .content {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+
+            th, td {
+                padding: 0.75rem 0.5rem;
+            }
+        }
+
+        /* ===== Print Styles ===== */
+        @media print {
+            header, .lang-toggle, .back-to-top, footer {
+                display: none;
+            }
+
+            body {
+                background: white;
+            }
+
+            .content {
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+
+        /* ===== Smooth Scroll ===== */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* ===== Selection ===== */
+        ::selection {
+            background: var(--primary-light);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">🕌 iMosque</div>
+            <div class="tagline">Islamic Community App - Aplikasi Muslim Terlengkap</div>
+
+            <!-- Language Toggle -->
+            <div class="lang-toggle">
+                <button class="lang-btn active" onclick="showLanguage('id')">🇮🇩 Bahasa Indonesia</button>
+                <button class="lang-btn" onclick="showLanguage('en')">🇬🇧 English</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Indonesian Version -->
+        <div id="content-id" class="content">
+            <h1>Kebijakan Privasi</h1>
+
+            <div class="info-box">
+                <strong>Terakhir diperbarui: 22 November 2025</strong>
+                <p>iMosque berkomitmen untuk melindungi privasi pengguna. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi Anda.</p>
+            </div>
+
+            <h2>1. Informasi yang Kami Kumpulkan</h2>
+
+            <h3>1.1 Informasi yang Anda Berikan Secara Langsung</h3>
+            <ul>
+                <li><strong>Nama</strong>: Untuk personalisasi pengalaman dan identifikasi dalam fitur konsultasi</li>
+                <li><strong>Alamat Email</strong>: Untuk komunikasi dan verifikasi pengguna</li>
+                <li><strong>Foto</strong>: Untuk foto profil pengguna (opsional)</li>
+                <li><strong>Pesan</strong>: Percakapan dalam fitur konsultasi ustadz/ustadzah</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>📱 PENTING</strong>
+                <p>Aplikasi iMosque <strong>TIDAK</strong> mengharuskan Anda membuat akun untuk menggunakan sebagian besar fitur. Anda dapat menggunakan fitur inti (jadwal sholat, baca Al-Quran, pencari masjid) tanpa login.</p>
+            </div>
+
+            <h3>1.2 Informasi yang Dikumpulkan Secara Otomatis</h3>
+
+            <h4>📍 Data Lokasi</h4>
+            <p>Kami mengumpulkan data lokasi Anda (perkiraan dan presisi) untuk:</p>
+            <ul>
+                <li>Menampilkan masjid terdekat dari posisi Anda</li>
+                <li>Menghitung waktu sholat yang akurat berdasarkan koordinat geografis Anda</li>
+                <li>Menampilkan peta dengan marker masjid di sekitar Anda</li>
+                <li>Memberikan arah menuju masjid pilihan</li>
+            </ul>
+
+            <div class="warning-box">
+                Lokasi HANYA digunakan saat aplikasi aktif dan TIDAK disimpan di server kami.
+            </div>
+
+            <h4>📱 Informasi Perangkat</h4>
+            <ul>
+                <li>Jenis perangkat (Android/iOS)</li>
+                <li>Versi sistem operasi</li>
+                <li>Model perangkat</li>
+                <li>Informasi untuk debugging dan crash reports</li>
+            </ul>
+
+            <h2>2. Bagaimana Kami Menggunakan Informasi Anda</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jenis Data</th>
+                        <th>Tujuan Penggunaan</th>
+                        <th>Disimpan?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Nama & Email</strong></td>
+                        <td>Identifikasi pengguna, komunikasi</td>
+                        <td>Ya (90 hari setelah tidak aktif)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lokasi</strong></td>
+                        <td>Hitung waktu sholat, tampilkan masjid terdekat</td>
+                        <td><strong>Tidak</strong> (hanya saat app aktif)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Foto Profil</strong></td>
+                        <td>Personalisasi akun</td>
+                        <td>Ya (sampai Anda hapus)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pesan Konsultasi</strong></td>
+                        <td>Layanan konsultasi agama</td>
+                        <td>Ya (90 hari)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>3. Berbagi Informasi dengan Pihak Ketiga</h2>
+
+            <div class="info-box">
+                <strong>🔒 JAMINAN PRIVASI</strong>
+                <p>Kami <strong>TIDAK</strong> menjual atau menyewakan informasi pribadi Anda.</p>
+            </div>
+
+            <h3>3.1 Penyedia Layanan Penting</h3>
+            <ul>
+                <li><strong>Google Maps Platform</strong>:
+                    <ul>
+                        <li>Data yang dibagikan: Koordinat lokasi Anda (sementara)</li>
+                        <li>Tujuan: Menampilkan peta dan lokasi masjid</li>
+                        <li>Kebijakan Privasi: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>3.2 Tidak Ada Pihak Lain</h3>
+            <p>Kami <strong>TIDAK</strong> membagikan data Anda dengan:</p>
+            <ul>
+                <li>❌ Pengiklan</li>
+                <li>❌ Broker data</li>
+                <li>❌ Platform media sosial</li>
+                <li>❌ Layanan analytics pihak ketiga</li>
+            </ul>
+
+            <h2>4. Keamanan Data</h2>
+
+            <p>Kami menerapkan langkah-langkah keamanan untuk melindungi informasi Anda:</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+                <div class="badge" style="display: flex; align-items: center; gap: 0.5rem;">
+                    🔒 Enkripsi Data
+                </div>
+                <div class="badge" style="display: flex; align-items: center; gap: 0.5rem;">
+                    👥 Akses Terbatas
+                </div>
+                <div class="badge" style="display: flex; align-items: center; gap: 0.5rem;">
+                    🛡️ Firebase Security
+                </div>
+                <div class="badge" style="display: flex; align-items: center; gap: 0.5rem;">
+                    🚫 No Third-Party Access
+                </div>
+            </div>
+
+            <div class="warning-box">
+                Meskipun kami menggunakan enkripsi dan langkah keamanan terbaik, tidak ada sistem yang 100% aman dari serangan.
+            </div>
+
+            <h2>5. Penyimpanan dan Penghapusan Data</h2>
+
+            <h3>5.1 Berapa Lama Data Disimpan?</h3>
+            <ul>
+                <li><strong>Data Pengguna</strong>: Maksimal <strong>90 hari</strong> setelah pengguna tidak aktif</li>
+                <li><strong>Data Lokasi</strong>: <strong>TIDAK disimpan</strong> - hanya digunakan real-time</li>
+                <li><strong>Pesan Konsultasi</strong>: <strong>90 hari</strong> setelah percakapan terakhir</li>
+                <li><strong>Bookmark Al-Quran</strong>: Tersimpan hingga Anda hapus secara manual</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>🗑️ Penghapusan Otomatis</strong>
+                <p>Jika Anda tidak menggunakan aplikasi selama <strong>90 hari berturut-turut</strong>, semua data Anda akan <strong>otomatis dihapus</strong> dari sistem kami.</p>
+            </div>
+
+            <h3>5.2 Cara Menghapus Data Secara Manual</h3>
+            <ol>
+                <li>Buka aplikasi iMosque</li>
+                <li>Masuk ke <strong>Profile</strong> → <strong>Pengaturan</strong></li>
+                <li>Pilih <strong>"Hapus Semua Data Saya"</strong></li>
+                <li>Konfirmasi penghapusan</li>
+            </ol>
+
+            <h2>6. Hak Anda sebagai Pengguna</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hak</th>
+                        <th>Cara Melakukannya</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Akses Data</strong></td>
+                        <td>Hubungi kami via email, kami akan kirim copy data Anda</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Koreksi Data</strong></td>
+                        <td>Edit di halaman Profile → Pengaturan</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hapus Data</strong></td>
+                        <td>Profile → Pengaturan → Hapus Data</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Batasi Lokasi</strong></td>
+                        <td>Settings perangkat → iMosque → Location → "While Using App"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ekspor Data</strong></td>
+                        <td>Hubungi kami, kami akan kirim dalam format JSON/CSV</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>7. Privasi Anak-Anak</h2>
+
+            <p>Aplikasi iMosque <strong>aman untuk segala usia</strong>, termasuk anak-anak:</p>
+            <ul>
+                <li>✅ Tidak ada iklan yang tidak pantas</li>
+                <li>✅ Tidak ada pembelian dalam aplikasi tanpa persetujuan orang tua</li>
+                <li>✅ Tidak ada fitur chat terbuka (hanya konsultasi dengan ustadz terverifikasi)</li>
+                <li>✅ Konten edukatif Islami yang aman</li>
+            </ul>
+
+            <h2>8. Perubahan pada Kebijakan Privasi</h2>
+
+            <p>Kami akan memberi tahu Anda tentang perubahan penting melalui:</p>
+            <ul>
+                <li>📱 Notifikasi dalam aplikasi</li>
+                <li>✉️ Email (jika Anda terdaftar)</li>
+                <li>📝 Update di halaman ini dengan tanggal revisi baru</li>
+            </ul>
+
+            <h2>9. Hubungi Kami</h2>
+
+            <div class="contact-card">
+                <h3 style="color: white; margin-top: 0;">Pertanyaan, Keluhan, atau Permintaan?</h3>
+                <div class="contact-item">📧 Email: <strong>privacy@imosque.app</strong></div>
+                <div class="contact-item">📍 Alamat: <strong>[Alamat Lengkap Anda]</strong></div>
+                <div class="contact-item">🌐 Website: <strong>www.imosque.app</strong></div>
+                <div class="contact-item">⏰ Waktu Respons: <strong>Maksimal 7 hari kerja</strong></div>
+            </div>
+
+            <h2>10. Pernyataan Kepatuhan</h2>
+
+            <p>Aplikasi iMosque mematuhi:</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0;">
+                <span class="badge">✅ Google Play Data Safety</span>
+                <span class="badge">✅ UU PDP Indonesia</span>
+                <span class="badge">✅ GDPR (Eropa)</span>
+                <span class="badge">✅ COPPA (Anak-anak)</span>
+            </div>
+
+            <div class="info-box" style="margin-top: 2rem; text-align: center; font-size: 1.1rem;">
+                <strong>Dengan menggunakan aplikasi iMosque, Anda menyetujui pengumpulan dan penggunaan informasi sesuai dengan Kebijakan Privasi ini.</strong>
+            </div>
+
+            <p style="text-align: center; margin-top: 2rem; color: var(--text-secondary);">
+                <strong>Versi</strong>: 1.0 | <strong>Bahasa</strong>: Indonesia | <strong>Tanggal Berlaku</strong>: 22 November 2025
+            </p>
+        </div>
+
+        <!-- English Version -->
+        <div id="content-en" class="content hidden">
+            <h1>Privacy Policy</h1>
+
+            <div class="info-box">
+                <strong>Last Updated: November 22, 2025</strong>
+                <p>iMosque is committed to protecting user privacy. This Privacy Policy explains how we collect, use, and protect your information.</p>
+            </div>
+
+            <h2>1. Information We Collect</h2>
+
+            <h3>1.1 Information You Provide Directly</h3>
+            <ul>
+                <li><strong>Name</strong>: For personalization and identification in consultation features</li>
+                <li><strong>Email Address</strong>: For communication and user verification</li>
+                <li><strong>Photos</strong>: For user profile picture (optional)</li>
+                <li><strong>Messages</strong>: Conversations in religious consultation feature</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>📱 IMPORTANT</strong>
+                <p>iMosque <strong>DOES NOT</strong> require you to create an account to use most features. You can use core features (prayer times, Quran reading, mosque finder) without logging in.</p>
+            </div>
+
+            <h3>1.2 Automatically Collected Information</h3>
+
+            <h4>📍 Location Data</h4>
+            <p>We collect your location data (approximate and precise) to:</p>
+            <ul>
+                <li>Display nearby mosques from your position</li>
+                <li>Calculate accurate prayer times based on your geographical coordinates</li>
+                <li>Display maps with mosque markers around you</li>
+                <li>Provide directions to selected mosques</li>
+            </ul>
+
+            <div class="warning-box">
+                Location is ONLY used while the app is active and NOT stored on our servers.
+            </div>
+
+            <h4>📱 Device Information</h4>
+            <ul>
+                <li>Device type (Android/iOS)</li>
+                <li>Operating system version</li>
+                <li>Device model</li>
+                <li>Information for debugging and crash reports</li>
+            </ul>
+
+            <h2>2. How We Use Your Information</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Purpose</th>
+                        <th>Stored?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Name & Email</strong></td>
+                        <td>User identification, communication</td>
+                        <td>Yes (90 days after inactive)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Location</strong></td>
+                        <td>Calculate prayer times, show nearby mosques</td>
+                        <td><strong>No</strong> (only while app active)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Profile Photo</strong></td>
+                        <td>Account personalization</td>
+                        <td>Yes (until you delete)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Consultation Messages</strong></td>
+                        <td>Religious consultation service</td>
+                        <td>Yes (90 days)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>3. Sharing Information with Third Parties</h2>
+
+            <div class="info-box">
+                <strong>🔒 PRIVACY GUARANTEE</strong>
+                <p>We <strong>DO NOT</strong> sell or rent your personal information.</p>
+            </div>
+
+            <h3>3.1 Essential Service Providers</h3>
+            <ul>
+                <li><strong>Google Maps Platform</strong>:
+                    <ul>
+                        <li>Data shared: Your location coordinates (temporarily)</li>
+                        <li>Purpose: Display maps and mosque locations</li>
+                        <li>Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>3.2 No Other Parties</h3>
+            <p>We <strong>DO NOT</strong> share your data with:</p>
+            <ul>
+                <li>❌ Advertisers</li>
+                <li>❌ Data brokers</li>
+                <li>❌ Social media platforms</li>
+                <li>❌ Third-party analytics services</li>
+            </ul>
+
+            <h2>4. Data Security</h2>
+
+            <p>We implement security measures to protect your information:</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+                <div class="badge">🔒 Data Encryption</div>
+                <div class="badge">👥 Limited Access</div>
+                <div class="badge">🛡️ Firebase Security</div>
+                <div class="badge">🚫 No Third-Party Access</div>
+            </div>
+
+            <div class="warning-box">
+                While we use encryption and best security practices, no system is 100% secure from attacks.
+            </div>
+
+            <h2>5. Data Retention and Deletion</h2>
+
+            <h3>5.1 How Long is Data Stored?</h3>
+            <ul>
+                <li><strong>User Data</strong>: Maximum <strong>90 days</strong> after user becomes inactive</li>
+                <li><strong>Location Data</strong>: <strong>NOT stored</strong> - only used in real-time</li>
+                <li><strong>Consultation Messages</strong>: <strong>90 days</strong> after last conversation</li>
+                <li><strong>Quran Bookmarks</strong>: Stored until you manually delete</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>🗑️ Automatic Deletion</strong>
+                <p>If you don't use the app for <strong>90 consecutive days</strong>, all your data will be <strong>automatically deleted</strong> from our system.</p>
+            </div>
+
+            <h3>5.2 Manual Data Deletion</h3>
+            <ol>
+                <li>Open iMosque app</li>
+                <li>Go to <strong>Profile</strong> → <strong>Settings</strong></li>
+                <li>Select <strong>"Delete All My Data"</strong></li>
+                <li>Confirm deletion</li>
+            </ol>
+
+            <h2>6. Your Rights as a User</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Right</th>
+                        <th>How to Exercise</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Access Data</strong></td>
+                        <td>Contact us via email, we'll send a copy of your data</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Correct Data</strong></td>
+                        <td>Edit in Profile → Settings</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Delete Data</strong></td>
+                        <td>Profile → Settings → Delete Data</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Limit Location</strong></td>
+                        <td>Device Settings → iMosque → Location → "While Using App"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Export Data</strong></td>
+                        <td>Contact us, we'll send in JSON/CSV format</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>7. Children's Privacy</h2>
+
+            <p>iMosque app is <strong>safe for all ages</strong>, including children:</p>
+            <ul>
+                <li>✅ No inappropriate ads</li>
+                <li>✅ No in-app purchases without parental consent</li>
+                <li>✅ No open chat features (only consultation with verified scholars)</li>
+                <li>✅ Safe Islamic educational content</li>
+            </ul>
+
+            <h2>8. Changes to This Privacy Policy</h2>
+
+            <p>We will notify you of important changes through:</p>
+            <ul>
+                <li>📱 In-app notifications</li>
+                <li>✉️ Email (if you're registered)</li>
+                <li>📝 Updates on this page with new revision date</li>
+            </ul>
+
+            <h2>9. Contact Us</h2>
+
+            <div class="contact-card">
+                <h3 style="color: white; margin-top: 0;">Questions, Complaints, or Requests?</h3>
+                <div class="contact-item">📧 Email: <strong>privacy@imosque.app</strong></div>
+                <div class="contact-item">📍 Address: <strong>[Your Full Address]</strong></div>
+                <div class="contact-item">🌐 Website: <strong>www.imosque.app</strong></div>
+                <div class="contact-item">⏰ Response Time: <strong>Maximum 7 business days</strong></div>
+            </div>
+
+            <h2>10. Compliance Statement</h2>
+
+            <p>iMosque app complies with:</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0;">
+                <span class="badge">✅ Google Play Data Safety</span>
+                <span class="badge">✅ Indonesian PDP Law</span>
+                <span class="badge">✅ GDPR (Europe)</span>
+                <span class="badge">✅ COPPA (Children)</span>
+            </div>
+
+            <div class="info-box" style="margin-top: 2rem; text-align: center; font-size: 1.1rem;">
+                <strong>By using the iMosque app, you agree to the collection and use of information in accordance with this Privacy Policy.</strong>
+            </div>
+
+            <p style="text-align: center; margin-top: 2rem; color: var(--text-secondary);">
+                <strong>Version</strong>: 1.0 | <strong>Language</strong>: English | <strong>Effective Date</strong>: November 22, 2025
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 iMosque. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#top">Back to Top</a>
+                <a href="mailto:privacy@imosque.app">Contact</a>
+                <a href="https://www.imosque.app" target="_blank">Visit Website</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" onclick="scrollToTop()">↑</div>
+
+    <script>
+        // Language Toggle
+        function showLanguage(lang) {
+            const idContent = document.getElementById('content-id');
+            const enContent = document.getElementById('content-en');
+            const buttons = document.querySelectorAll('.lang-btn');
+
+            if (lang === 'id') {
+                idContent.classList.remove('hidden');
+                enContent.classList.add('hidden');
+                buttons[0].classList.add('active');
+                buttons[1].classList.remove('active');
+            } else {
+                idContent.classList.add('hidden');
+                enContent.classList.remove('hidden');
+                buttons[0].classList.remove('active');
+                buttons[1].classList.add('active');
+            }
+        }
+
+        // Back to Top Button
+        const backToTopButton = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Add smooth scrolling to all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
